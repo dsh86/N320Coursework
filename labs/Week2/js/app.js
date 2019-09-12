@@ -25,7 +25,7 @@ class Drop{
 
 	}
 
-	Fill(){
+	Fill() {
 
 		//set a color
     fill(0,0,200);
@@ -41,8 +41,8 @@ class Drop{
 
 
 
-class Ground{
-    constructor(){
+class Ground {
+    constructor() {
 
 		//set to and from points and how far it is
         this.colorBase = 0;
@@ -129,7 +129,7 @@ function draw(){
     colorMode(RGB);
     background(255);
 
-	//5% will make a drop
+	//5 percent will make a drop
     if (Math.random() < 0.05){
         cloud.createDrop();
 
