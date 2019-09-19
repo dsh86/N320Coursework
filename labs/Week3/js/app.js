@@ -4,7 +4,6 @@ class Ball {
       this.velocity = { x: 10, y: 0 };
   
       }
-      //once a frame,
   
       update() {
   
@@ -50,9 +49,7 @@ class Ball {
   
   }
   
-  //manager
-  
-  var World = {
+   var World = {
   
     //background color
     bgcolor: [237, 119, 83],
@@ -91,11 +88,6 @@ class Ball {
   }
   
   
-  
-  
-  
-  
-  
   //create boxes and ball
   var ball = new Ball();
   World.boxes.push(new Box(0,0));
@@ -111,7 +103,6 @@ class Ball {
   
   }
   
-  //every frame,
   function draw() {
   
     //update the background
