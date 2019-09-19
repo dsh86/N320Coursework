@@ -40,10 +40,10 @@ class Ball {
   
     }
   
-    //increase the size by 5 in x and y
+    //increase the size x and y
     grow(){
-      this.size.x += 5;
-      this.size.y += 5;
+      this.size.x += 3;
+      this.size.y += 3;
   
     } 
   
@@ -67,7 +67,7 @@ class Ball {
   
     },
   
-    //called when ball hits wall
+    //called when ball hits
     ballBeyond: function(whichBall) {
   
       //random color selection
@@ -96,7 +96,7 @@ class Ball {
   
   function setup() {
   
-    //canvas for our objects
+    //canvas for objects
     createCanvas(400,300);
   
     
@@ -105,10 +105,10 @@ class Ball {
   
   function draw() {
   
-    //update the background
+    //update background
     background( World.bgcolor );
   
-    //call all update functons in our classes
+    //call all update functons
     ball.update();
     World.update();
   
