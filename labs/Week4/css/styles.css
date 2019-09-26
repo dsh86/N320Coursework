@@ -1,0 +1,183 @@
+.title{
+
+    margin-top:20px;
+    font-family:Times New Roman;
+    font-size:50px;
+
+    }
+
+
+
+.bigSquare{
+
+    margin-top:20px;
+    margin-bottom:10px;
+    width:1000px;
+    height:150px;
+    background-color:#1d0763;
+    animation: bigSquare 4.0s;
+
+}
+
+
+.card {
+
+    opacity: 0;
+    background-color:#9522b5;
+    border-radius: 4px;
+    width: 250px;
+    height: 150px;
+    margin: 20px;
+    padding: 10px;
+    animation: cardBuildIn 4.0s;
+    animation-delay:.2s;
+    animation-fill-mode: both;
+
+  }
+
+  
+
+  .cardOver {
+
+    animation: cardOverAnim .1s;
+    animation-fill-mode: both;
+
+  }
+
+  
+
+  .cardOut {
+
+    animation: cardOutAnim .1s;
+    animation-fill-mode: both;
+
+  }
+
+
+
+  .cardDown {
+
+    animation: cardDownAnim .1s;
+    animation-fill-mode: both;
+
+  }
+
+  
+
+  #theplace {
+
+    width: 950px;
+    margin: 30px;
+    display: flex;
+    flex-flow: row wrap;
+
+  }
+
+  
+
+  @keyframes titleIn {
+
+    from{
+
+      opacity: 0;
+      transform: rotateY(90deg);
+
+    }
+
+  }
+
+  @keyframes bigSquare { 
+
+    from {
+      opacity: 0;
+      transform: scale(.1);
+
+      } 
+
+    to{
+
+      opacity:1;
+      transform: scale(1);
+      transform: scale(1);
+
+      }
+
+  }
+
+
+  @keyframes cardBuildIn {
+
+    from {
+
+      opacity: 0;
+      transform: scale(.5);
+
+      
+    }
+
+    to {
+
+      opacity: 1;
+
+      
+    }
+
+  }
+
+  
+  @keyframes cardOverAnim {
+
+    to {
+
+      opacity: 1;
+      background-color: yellow;
+      transform: scale(1.0);
+
+    }
+
+  }
+
+  
+  @keyframes cardOutAnim {
+
+    from {
+
+      opacity: 1;
+      transform: scale(1.2);
+      background-color: orange;
+
+    }
+
+    
+
+    to {
+
+      opacity: 1;
+      transform: scale(1);
+      background-color: green;
+
+    }
+
+  }
+
+
+
+  @keyframes cardDownAnim {
+
+    from {
+
+      opacity: 1;
+      transform: scale(1.2);
+      background-color: blue;
+
+    }
+
+    
+    to {
+
+      opacity: 0;
+      transform: scale(1.0);
+
+    }
+
+  }
