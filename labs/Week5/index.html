@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Week 5 Vue Lab</title>
+
+		<style>
+
+        body {
+
+            background: #000;
+            display:flex;
+            align-items:left;
+            justify-content:center;
+            flex-direction:column;
+
+        }
+
+        .student {
+
+            border-radius: 4px;
+            width: 200px;
+            height: 200px;
+            padding: 3px;
+            background-color: #eee;
+            color: #ef4b4b;
+
+        }
+
+        .cardActive{
+
+        	transition: transform .3s ease, opacity 0.3s ease;
+            transform: rotate(360deg);
+            opacity: 1;
+
+        }
+
+        .cardOut {
+
+            transition: transform  .3s ease, opacity .3s ease;
+            transform: rotate(45deg);
+            opacity: 0;
+
+        }
+
+        .arrow , .backArrow{
+
+            cursor: pointer;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            margin: 20px;
+            border-radius: 5px;
+            Display:flex;
+            background: #7ecfc0;
+            align-items:center;
+            justify-content:center;
+
+        }
+
+        .buttondiv{
+
+            display: flex;
+
+        }
+
+    </style>
+
+	</head>
+
+	<body>
+
+		<div id="flapp">
+
+			<student-card v-bind:student="currentStudent" v-bind:isactive="cardActive"></student-card>
+
+            <div class="buttondiv">
+
+                <button class="backArrow" v-on:click="arrowBack"> < </button>
+
+    			<button class="arrow" v-on:click="arrowClicked"> > </button>
+
+            </div>
+
+		</div>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+
+		<script type="text/javascript" src="js/app.js"></script>
+
+	</body>
+
+</html>
