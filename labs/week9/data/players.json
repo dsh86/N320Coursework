@@ -1,0 +1,34 @@
+{
+    
+
+        "players":[
+
+        {"Team":"LA Clippers", "NBA":true,"record":2,"Conference":"West", "Player":[
+
+            {"playername": "Kawhi Lenoard", "age":28, "skill":"superstar"}
+
+        ]},
+
+        {"Team":"Brooklyn Nets", "NBA":true,"record":1,"Conference":"East", "Player":[
+
+            {"playername": "Kyrie Irving", "age":28, "skill":"superstar"}
+
+        ]},
+
+        {"Team":"LA Lakers", "NBA":true,"record":2,"Conference":"West", "Player":[
+
+            {"playername": "Lebron James", "age":34, "skill":"Legend"}
+
+        ]}
+
+
+
+        ]
+
+
+
+    
+
+    
+
+}
