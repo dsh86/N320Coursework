@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/x-template" id="grid">
+      <div class="grid">
+        <div class="row" v-for="(row, row_index) in rows">
+          <div class="column" v-for="(column, column_index) in row" v-on:click="tap" v-bind:data-row="row_index" v-bind:data-column="column_index">
+            {{column}}
+          </div>
+        </div>
+        <div class="status">
+          <div v-if="finished">
+            <p v-if="stalemate">It's a draw! Stalemate!</p>
+            <p v-else>Finished! {{next}} wins!</p>
+            <a v-on:click="restart">Play Again?</a>
+          </div>
+          <span v-else>Next go: {{next}}</span>
+        </div>
+      </div>
+    </script>
+    <script src="./app.js" type="text/javascript"></script>
+  </body>
+</html>
