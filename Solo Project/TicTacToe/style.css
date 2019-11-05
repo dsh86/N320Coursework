@@ -1,0 +1,14 @@
+.row {
+   clear: both;
+ }
+ .column {
+   border: 5px solid red;
+   width: 75px;
+   height: 50px;
+   float: left;
+   text-align: center;
+   padding-top: 30px;
+ }
+ .status {
+   clear: both;
+ }
