@@ -26,11 +26,11 @@ var scene = new BABYLON.Scene(engine);
 
     cube2 = BABYLON.MeshBuilder.CreateBox("box", {diameter: .3}, scene);
     cube2.position.x = 1.1;
-    cube2.rotation.x = 1.5;
+    
 
     cube3 = BABYLON.MeshBuilder.CreateBox("box", {diameter: .3}, scene);
     cube3.position.x = -1.1;
-
+    
 
 
 
